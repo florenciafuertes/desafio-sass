@@ -1,0 +1,166 @@
+body{
+	font-family: "Open Sans", sans-serif;
+	color: #444444;
+	a{
+		text-decoration: none;
+		&:hover{
+			color: #1eb4ff;
+  			text-decoration: none;
+		}
+	}
+	h1, h2, h3, h4, h5, h6 {
+  		font-family: "Raleway", sans-serif;
+	}
+}
+#header{
+	background-color: white;
+	font-family: 'Raleway', sans-serif;
+		.logo img{
+		  	padding: 0.3em;
+	  		margin: 0;
+	  		max-height: 60px;
+	  	}
+	  	.nav-item a:hover{
+	  		text-decoration: underline;
+ 			text-decoration-color: #ab3fd8;
+	  	}
+	}
+#hero{
+  	width: 100%;
+  	margin-top: 70px;
+  	padding: 60px 0;
+  	h1{
+  		margin: 0 0 20px 0;
+  		font-size: 48px;
+		font-weight: 700;
+		line-height: 2rem;
+		color: #364146;
+		@media (max-width: 992px){
+			font-size: 32px;
+    		line-height: 40px;
+		}
+  	}
+  	h2{
+  		color: #576971;
+  		margin-bottom: 30px;
+  		font-size: 23px;
+  		line-height: 2.2rem;
+  		text-align: justify;
+  		@media (max-width: 992px){
+  			font-size: 18px;
+  		}
+  	}
+  	.hero-img{
+  		text-align: center;
+  		img{
+  			width: 70%;
+			animation-name: zoom;
+			animation-iteration-count: 1;
+			animation-timing-function: linear;
+			animation-duration: 3s;
+			animation-delay: 0;
+			animation-fill-mode: forwards;
+			@media (max-width: 992px){
+				width: 60%
+			}
+  		}
+  		@keyframes zoom{
+  			0%{
+    			transform: scale(0.9);
+  			}
+  			100%{
+    			transform: scale(1.2);
+  			}
+		}
+  	}
+  	.btn-mio{
+		min-width: 130px;
+		height: 40px;
+		padding: 5px 50px;
+		font-weight: bold;
+		cursor: pointer;
+		transition: all 0.3s ease;
+		position: relative;
+		display: inline-block;
+		outline: none;
+		border: 1px solid #000;
+		color: #252440;
+		background: transparent;
+		text-align: center; 
+		font-size: 1.3rem;
+		&:hover:after {
+  			top: 0;
+  			left: 0;
+		}
+		&:after {
+  			content: "";
+  			width: 100%;
+  			z-index: -1;
+  			position: absolute;
+  			height: 100%;
+  			top: 5px;
+  			left: 5px;
+  			transition: 0.2s;
+  			background-color: #d6e1f7;
+		}
+	}
+}
+#services{
+	h2{
+		font-size: 30px;
+		font-weight: 700;
+		color: #364146;	
+	}
+	.icon-box{
+		padding: 30px;
+  		position: relative;
+  		overflow: hidden;
+  		margin: 0;
+  		background: #fff;
+  		box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  		transition: all 0.3s ease-in-out;
+  		border-radius: 4px;
+  		text-align: center;
+  		border-bottom: 3px solid #fff;
+  		&:hover{
+  			transform: translateY(-5px);
+  		}
+  		&-pink:hover{
+  			border-color: #ff689b;
+  		}
+  		&-cyan:hover{
+  			border-color: #3fcdc7;
+  		}
+  		&-green:hover{
+  			border-color: #41cf2e;
+		}
+		&-blue:hover{
+  			border-color: #2282ff;
+		}
+	}
+	.title{  
+		font-weight: 700;
+  		margin-bottom: 15px;
+  		font-size: 18px;
+  		a{
+  			color: #364146;
+  			text-decoration: none;
+  		}
+	}
+	.description{
+		font-size: 15px;
+  		line-height: 28px;
+	}
+}
+footer{
+	.dibujo{
+		width: 10%
+	}
+	.nav-item{
+		padding: 10px;
+		&:hover{
+			text-decoration: underline;
+ 			text-decoration-color: #ab3fd8;
+		}
+	}
+}
