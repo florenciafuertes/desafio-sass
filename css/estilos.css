@@ -39,16 +39,16 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   padding: 60px 0;
 }
 
-#hero h1 {
-  margin: 0 0 20px 0;
-  font-size: 48px;
+#hero .grande {
+  margin: 0 0 30px 0;
+  font-size: 50px;
   font-weight: 700;
   line-height: 2rem;
   color: #364146;
 }
 
 @media (max-width: 992px) {
-  #hero h1 {
+  #hero .grande {
     font-size: 32px;
     line-height: 40px;
   }
@@ -128,7 +128,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   top: 5px;
   left: 5px;
   transition: 0.2s;
-  background-color: #d6e1f7;
+  background-color: #88b7fd;
 }
 
 #services h2 {
@@ -184,6 +184,146 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 #services .description {
   font-size: 15px;
   line-height: 28px;
+}
+
+#about {
+  margin-top: 70px;
+}
+
+#about .container {
+  background-color: #f7f8f9;
+  padding: 60px 50px;
+}
+
+#about .container .content h3 {
+  font-weight: 400;
+  font-size: 32px;
+  color: #364146;
+  font-family: "Poppins", sans-serif;
+}
+
+#about .container .content p {
+  text-align: justify;
+}
+
+#relatos .btn-mio {
+  min-width: 130px;
+  height: 40px;
+  padding: 5px 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #252440;
+  background: transparent;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#relatos .btn-mio:hover:after {
+  top: 0;
+  left: 0;
+}
+
+#relatos .btn-mio:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #dca9f1;
+}
+
+#cards {
+  text-align: justify;
+}
+
+#cards .card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#cards .btn-mio {
+  min-width: 130px;
+  height: 40px;
+  padding: 5px 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #252440;
+  background: transparent;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#cards .btn-mio:hover:after {
+  top: 0;
+  left: 0;
+}
+
+#cards .btn-mio:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #97efce;
+}
+
+#contact .btn-mio {
+  min-width: 130px;
+  height: 40px;
+  padding: 5px 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #252440;
+  background: transparent;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+#contact .btn-mio:hover:after {
+  top: 0;
+  left: 0;
+}
+
+#contact .btn-mio:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #ff689b;
+}
+
+#contact .redes img {
+  max-height: 35px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 footer .dibujo {

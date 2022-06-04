@@ -1,3 +1,5 @@
+@import "mixins";
+
 body{
 	font-family: "Open Sans", sans-serif;
 	color: #444444;
@@ -29,9 +31,9 @@ body{
   	width: 100%;
   	margin-top: 70px;
   	padding: 60px 0;
-  	h1{
-  		margin: 0 0 20px 0;
-  		font-size: 48px;
+  	.grande{
+  		margin: 0 0 30px 0;
+  		font-size: 50px;
 		font-weight: 700;
 		line-height: 2rem;
 		color: #364146;
@@ -74,35 +76,7 @@ body{
 		}
   	}
   	.btn-mio{
-		min-width: 130px;
-		height: 40px;
-		padding: 5px 50px;
-		font-weight: bold;
-		cursor: pointer;
-		transition: all 0.3s ease;
-		position: relative;
-		display: inline-block;
-		outline: none;
-		border: 1px solid #000;
-		color: #252440;
-		background: transparent;
-		text-align: center; 
-		font-size: 1.3rem;
-		&:hover:after {
-  			top: 0;
-  			left: 0;
-		}
-		&:after {
-  			content: "";
-  			width: 100%;
-  			z-index: -1;
-  			position: absolute;
-  			height: 100%;
-  			top: 5px;
-  			left: 5px;
-  			transition: 0.2s;
-  			background-color: #d6e1f7;
-		}
+		@include boton(#88b7fd);
 	}
 }
 #services{
@@ -150,6 +124,49 @@ body{
 	.description{
 		font-size: 15px;
   		line-height: 28px;
+	}
+}
+#about{
+	margin-top: 70px;
+	.container{
+		background-color: #f7f8f9;
+  		padding: 60px 50px;
+  		.content h3{
+  			font-weight: 400;
+  			font-size: 32px;
+  			color: #364146;
+  			font-family: "Poppins", sans-serif;
+  		}
+  		.content p{
+  			text-align: justify;
+  		}
+	}
+}
+#relatos{
+	.btn-mio{
+		@include boton(#dca9f1);
+	}
+}
+#cards{
+	text-align: justify;
+	.card-title{
+		font-size: 1.5rem;
+  		font-weight: 700;
+	}
+	.btn-mio{
+		@include boton(#97efce);
+	}
+}
+#contact{
+	.btn-mio{
+		@include boton(#ff689b);
+	}
+	.redes img{
+		max-height: 35px;
+	}
+	h2{
+		font-size: 2rem;
+		font-weight: 700
 	}
 }
 footer{
