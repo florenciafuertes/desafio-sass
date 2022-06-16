@@ -24,7 +24,7 @@
 				  	<div class="collapse navbar-collapse" id="navbarWithDropdown">
 				    	<ul class="navbar-nav">
 				      		<li class="nav-item">
-				        		<a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+				        		<a class="nav-link" href="index.html">INICIO</a>
 				      		</li>
 				      		<li class="nav-item">
 				        		<a class="nav-link" href="nosotros.html">NOSOTROS</a>
@@ -58,27 +58,47 @@
         		<div class="m-3 h-100">
           			<h5 class="card-title">TREKKING</h5>
           			<p class="card-text">El trekking es una actividad física en la que se recorren parajes naturales como bosques, montañas, cañones, selvas o ríos y que requieren más esfuerzo físico que el senderismo. A diferencia del senderismo estas actividades pueden durar muchas horas e incluso varios días.</p>
-          			<a href="#" class="btn-mio">Lugares</a>
-          			<a href="#" class="btn-mio">Equipo</a>
+          			<button class="btn-mio me-2" type="button" data-bs-toggle="modal" data-bs-target="#botonModal">Lugares</button>
+          			<button class="btn-mio me-auto" type="button" data-bs-toggle="modal" data-bs-target="#botonModal">Equipo</button>
         		</div>
       		</div>
      		<div class="col-sm">
         		<div class="m-3 h-100">
           			<h5 class="card-title">CICLOTURISMO</h5>
           			<p class="card-text">El cicloturismo es el ciclismo a largas distancias, una actividad recreativa y no competitiva que combina la actividad física y el turismo. Consiste en viajar en bicicleta visitando los lugares que se encuentra uno a su paso. El cicloturismo puede convertirse en ciclocamping si cargas tu equipo de acampe.</p>
-          			<a href="#" class="btn-mio">Rutas</a>
-          			<a href="#" class="btn-mio">Equipo</a>
+          			<button class="btn-mio me-2" type="button" data-bs-toggle="modal" data-bs-target="#botonModal">Rutas</button>
+          			<button class="btn-mio me-auto" type="button" data-bs-toggle="modal" data-bs-target="#botonModal">Equipo</button>
         		</div>   
       		</div>
       		<div class="col-sm">
         		<div class="m-3 h-100">
           			<h5 class="card-title">VISA W&H</h5>
           			<p class="card-text">Las visas working holiday son un tipo de visa que te permite viajar a un destino con el fin de trabajar y recorrer el país durante 1 año. Vas a poder ahorrar dinero, conocer gente de todo el mundo, viajar mucho, y lo mejor de todo, podés armar todo el viaje vos mismo.</p>
-          			<a href="#" class="btn-mio">Dinamarca</a>
-          			<a href="#" class="btn-mio">Otras</a>
+          			<button class="btn-mio me-2" type="button" data-bs-toggle="modal" data-bs-target="#botonModal">Países</button>
+          			<button class="btn-mio me-auto" type="button" data-bs-toggle="modal" data-bs-target="#botonModal">+ info</button>
         		</div>
       		</div>
     	</div>
+    	<!-- Modal -->
+    	<div class="modal fade" id="botonModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  		<div class="modal-dialog modal-dialog-centered">
+	    		<div class="modal-content">
+	      			<div class="modal-header">
+	        			<p class="modal-title">Uuupps!!</p>
+	        			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      			</div>
+				    <div class="modal-body">
+				        Este contenido todavía no está disponible.<br>
+				        ¡Suscribite a nuestro <span class="resalta">newsletter</span> para que te avisemos de todas las novedades!
+				    </div>
+	      			<div class="modal-footer">
+	        			<button type="button" class="btn-mio2" data-bs-dismiss="modal">Cerrar</button>
+	        			<button type="button" class="btn-mio2" data-bs-dismiss="modal"><a href="contacto.html" target="_blank">Suscribirme</a></button>
+	      			</div>
+	   			</div>
+	  		</div>
+		</div>
+		<!-- Fin Modal -->
   	</div>
   	<!-- Footer -->
   	<div class="container">

@@ -24,7 +24,7 @@
 				  	<div class="collapse navbar-collapse" id="navbarWithDropdown">
 				    	<ul class="navbar-nav">
 				      		<li class="nav-item">
-				        		<a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+				        		<a class="nav-link" href="index.html">INICIO</a>
 				      		</li>
 				      		<li class="nav-item">
 				        		<a class="nav-link" href="nosotros.html">NOSOTROS</a>
@@ -60,22 +60,22 @@
             		<div class="info">
               			<p>Mediante nuestras redes:</p>
               			<div class="redes me-auto">
-                			<img src="assets/youtube.svg" class="img-fluid"> <a href="https://www.youtube.com/channel/UCwCAAhpCEe-jzQEVkaR0n-g/videos" target="_blank">YouTube</a>
+                			<img src="assets/youtube.svg" class="img-fluid"><a href="https://www.youtube.com/channel/UCwCAAhpCEe-jzQEVkaR0n-g/videos" target="_blank">YouTube</a>
               			</div>
               			<div class="redes me-auto">
-                			<img src="assets/instagram.svg" class="img-fluid"> <a href="https://www.instagram.com/viajandodesurasur/" target="_blank">Instagram</a>
+                			<img src="assets/instagram.svg" class="img-fluid"><a href="https://www.instagram.com/viajandodesurasur/" target="_blank">Instagram</a>
               			</div>
               			<div class="redes me-auto">
-				            <img src="assets/facebook.svg" class="img-fluid"> <a href="https://es-la.facebook.com/viajando.de.sur.a.sur/" target="_blank">Facebook</a>
+				            <img src="assets/facebook.svg" class="img-fluid"><a href="https://es-la.facebook.com/viajando.de.sur.a.sur/" target="_blank">Facebook</a>
 				        </div>
 				        <div class="redes me-auto">
-				            <img src="assets/twitter.svg" class="img-fluid"> <a href="https://twitter.com/florfuer">Twitter</a>
+				            <img src="assets/twitter.svg" class="img-fluid"><a href="https://twitter.com/florfuer">Twitter</a>
 				        </div> <br>
               			<p>Dónde estamos ahora:</p>
               			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50767.533921391194!2d-59.17772166793308!3d-37.319517690110686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95911f9b2733946f%3A0xceef2c76899c202d!2sTandil%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1652908311975!5m2!1ses!2sar" width="600" height="450" style="border:0; width: 100%; height: 290px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             		</div>
           		</div>
-          		<div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
+          		<div class="formulario col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-left">
 	            	<form action="forms/contact.php" method="post" role="form" class="php-email-form">
 	              		<div class="row">
 	                		<div class="form-group col-md-6">
@@ -95,8 +95,29 @@
 	                		<label for="name">Mensaje</label>
 	                		<textarea class="form-control" name="message" rows="10" required></textarea>
 	              		</div> <br>
-	              		<div class="text-center"><button type="submit" class="btn-mio">Enviar</button></div>
+	              		<div class="text-center">
+	              			<button class="btn-mio" type="button" data-bs-toggle="modal" data-bs-target="#botonModal">Enviar</button>
+	              		</div>
 	            	</form>
+	            	<!-- Modal -->
+			    	<div class="modal fade" id="botonModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  		<div class="modal-dialog modal-dialog-centered">
+				    		<div class="modal-content">
+				      			<div class="modal-header">
+				        			<p class="modal-title">Uuupps!!</p>
+				        			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      			</div>
+							    <div class="modal-body">
+							        Este contenido todavía no está disponible.<br>
+							        Contactanos por nuestras redes sociales.
+							    </div>
+				      			<div class="modal-footer">
+				        			<button type="button" class="btn-mio2" data-bs-dismiss="modal">Cerrar</button>
+				      			</div>
+				   			</div>
+				  		</div>
+					</div>
+					<!-- Fin Modal -->
           		</div>
         	</div>
       	</div>
